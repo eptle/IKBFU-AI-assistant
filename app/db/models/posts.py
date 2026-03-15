@@ -1,16 +1,8 @@
-import enum
-from datetime import date
-
 from sqlalchemy import Text, Date, Index, Enum
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.db.base import Base
-
-
-class SourceEnum(str, enum.Enum):
-    TG = "TG"
-    VK = "VK"
-    WEBSITE = "WEBSITE"
+from app.db.enums.source_enum import SourceEnum
 
 
 class Post(Base):
