@@ -11,3 +11,4 @@ class Config:
     CHAT_WHITELIST = os.getenv("CHAT_WHITELIST").split(",")
     ACCESS_KEY = os.getenv("ACCESS_KEY")
     DATABASE_URL = f"postgresql+asyncpg://{os.getenv("POSTGRES_USER")}:{os.getenv("POSTGRES_PASSWORD")}@postgres:{os.getenv("POSTGRES_PORT")}/{os.getenv("POSTGRES_DB")}"
+    API_URL: str = os.getenv("API_URL")
