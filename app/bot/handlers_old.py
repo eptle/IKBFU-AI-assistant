@@ -1,11 +1,11 @@
-import keyboards as kb
+import app.bot.keyboards as kb
 
 from aiogram import F, Router
 from aiogram.filters import CommandStart, Command
 from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.fsm.context import FSMContext
-from middlewares import TestMiddleware
+from app.bot.middlewares import TestMiddleware
 
 router = Router()
 

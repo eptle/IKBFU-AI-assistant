@@ -1,8 +1,8 @@
-import keyboards as kb
+import app.bot.keyboards as kb
 
 from aiogram import F, Router
 from aiogram.types import Message
-from middlewares import TestMiddleware
+from app.bot.middlewares import TestMiddleware
 
 router = Router()
 

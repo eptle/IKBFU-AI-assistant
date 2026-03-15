@@ -1,11 +1,11 @@
-import keyboards as kb
+import app.bot.keyboards as kb
 
 from aiogram import Router, F
 from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
-from middlewares import TestMiddleware
+from app.bot.middlewares import TestMiddleware
 from config import Config
-from forms import Registration
+from app.bot.forms import Registration
 
 
 router = Router()
@@ -20,7 +20,7 @@ async def insert_key(callback: CallbackQuery, state: FSMContext):
 
 @router.message(Registration.key)
 async def auth(message: Message, state: FSMContext):
-    if message.text == Config.access_key:
+    if message.text == Config.ACCESS_KEY:
         await message.answer("Откуда ты его знаешь? -_-", reply_markup=kb.user)
         await state.update_data(key = message.text)
         await state.clear()

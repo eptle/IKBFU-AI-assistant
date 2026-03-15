@@ -3,11 +3,11 @@ import logging
 
 from config import Config
 from aiogram import Bot, Dispatcher
-from middlewares import TestMiddleware
-from handlers import setup_routers
+from app.bot.middlewares import TestMiddleware
+from app.bot.handlers import setup_routers
 
 
-bot = Bot(token=Config.token)
+bot = Bot(token=Config.TOKEN)
 dp = Dispatcher()
 
 
