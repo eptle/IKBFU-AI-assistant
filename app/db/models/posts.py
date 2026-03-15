@@ -15,16 +15,21 @@ class SourceEnum(str, enum.Enum):
 
 class Post(Base):
     __tablename__ = "posts"
-
     id: Mapped[int] = mapped_column(primary_key=True)
-
-    content: Mapped[str] = mapped_column(Text, nullable=False)
-
-    link: Mapped[str | None] = mapped_column(Text, nullable=True)
-
+    content: Mapped[str] = mapped_column(
+        Text, 
+        nullable=False
+        )
+    link: Mapped[str | None] = mapped_column(
+        Text, 
+        nullable=True
+        )
     source: Mapped[SourceEnum] = mapped_column(
         Enum(SourceEnum, name="source_enum"),
         nullable=False
-    )
-
-    date: Mapped[Date] = mapped_column(Date, nullable=False, index=True)
+        )
+    date: Mapped[Date] = mapped_column(
+        Date, 
+        nullable=False, 
+        index=True
+        )
