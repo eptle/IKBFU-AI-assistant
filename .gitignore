@@ -5,3 +5,4 @@ __pycache__
 pgdata
 migration
 127.0.*
+sbert_large_nlu_ru/*

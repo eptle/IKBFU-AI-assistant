@@ -1,0 +1,26 @@
+{
+  "tg": {
+    "ikbfu": [
+      {
+        "url": "https://t.me/bfunews",
+        "enabled": true
+      }
+    ],
+    "ikbfu_students": {
+      "url": "https://t.me/ikbfu_students",
+      "enabled": true
+    }
+  },
+  "vk": {
+    "ikbfu": [
+      {
+        "url": "https://t.me/ikbfu",
+        "enabled": true
+      }
+    ],
+    "ikbfu_students": {
+      "url": "https://t.me/ikbfu_students",
+      "enabled": true
+    }
+  }
+}
