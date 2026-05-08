@@ -1,0 +1,7 @@
+embeddings/
+├── __init__.py
+├── base.py
+├── local.py        # SentenceTransformers
+├── openai.py
+├── batching.py
+└── factory.py

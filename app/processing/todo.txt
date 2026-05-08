@@ -1,0 +1,17 @@
+processing/
+├── __init__.py
+├── chunker.py              # Chunk splitting
+├── deduplicator.py         # Hash/similarity dedup
+├── language.py
+├── metadata.py
+└── quality.py              # Фильтрация garbage docs
+
+
+вторая версия от ШизГПТ
+processing/
+├── __init__.py
+├── models.py
+├── cleaner.py
+├── chunker.py
+├── deduplicator.py
+└── quality.py

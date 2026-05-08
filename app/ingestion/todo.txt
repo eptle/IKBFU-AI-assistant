@@ -1,0 +1,29 @@
+ingestion/
+├── __init__.py
+├── bootstrap.py
+├── registry.py
+├── sources/
+│   ├── telegram/
+│   ├── vk/
+│   └── websites/
+└── pipelines/
+
+# ingestion/sources/telegram/
+telegram/
+├── __init__.py
+├── client.py           # Telethon client
+├── parser.py           # Скачивание raw messages
+├── aggregator.py       # Работа с grouped_id
+├── cleaner.py          # Telegram-specific cleaning
+├── normalizer.py       # Telegram → unified document
+└── models.py           # Telegram-specific models
+P.S. аналогично для вк 
+
+# ingestion/sources/websites/
+websites/
+├── crawler.py
+├── parser.py
+├── extractor.py
+├── cleaner.py
+└── normalizer.py
+

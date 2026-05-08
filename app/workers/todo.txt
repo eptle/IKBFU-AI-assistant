@@ -1,0 +1,16 @@
+workers/
+├── ingest_worker.py
+├── embedding_worker.py
+└── scheduler.py
+
+
+Зачем нам воркерс:
+
+Иначе  eventually начнем делать:
+```python
+await parse()
+await embed()
+await qdrant.upsert()
+```
+
+в одном async endpoint и это убьет производительность
